@@ -1,0 +1,210 @@
+Course2 goals:
+	Learn to work with both Open Source and Commerical tools for Data Science
+
+Programming Languages for Data Science:
+	1. Python
+		- AI, web development, IoT(Resberry Pi)
+		- Larget standard library
+		- Pandas, NumPy, SciPy, Matplotlib
+		- Large community in open source
+	2. R
+		- Free software(vs open source)
+			- Open source is more business focus and free software is more focused on a set of values
+		- statisticians, data minor
+		- array-oriented syntax -> easy to translate from math to code
+
+	3. SQL(sequel)
+		- Structured Query Language
+		- interpreter between user and database
+	what else do we have:
+		Scala, Java, C++, Julia
+		JS, php, GO
+
+Roles in DS:
+	Business Analyst, Database Engineer, Data Analyst, Data Scientist, Research Scientist, SDE, PM
+
+-----------------------------------------------------------
+    Open Source for DS Tools
+-----------------------------------------------------------
+
+Data Management:
+	process of retrieving data
+	#MySQL, PostgreSQL
+
+Data Integration and Transformation:
+	process of retrieving data from remote data management systems
+	#ETL extract-transform-load
+	#Apache Airflow, Kubeflow, Apache kafka, apache nifi, spark SQL, Node-RED
+
+Data Visualization:
+	final step of processing data
+	#Hue(visualiation from SQL), Kibana, Superset
+
+Model Building:
+	process of creating a machine learning model using appropriate algorithm
+Model Deployment:
+	make ML model available for third-party applications
+	#PredictionIO, Seldon, TensorFlow Service, Tensorflow Lite, Tensorflow.JS
+Model Monitoring and Assessment:
+	Monitor new incoming data
+	#ModelDB, Prometheus, IBM AI Fairness 360
+	#IBM Explainability 360
+
+Data Asset Managment and Code assest management:
+	teamwork and assign jobs
+	#Code asset: git(version control), GitHub, GitLab, Bitbucket
+	#Data asset: Apache Atlas, ODPi EGERIA, Kylo
+
+Development Environment and Execution Environment:
+	#Dev: Jupyter notebook, Spider, R studio
+	#Exec: Apache Spark, Apache Flink, riseLab Ray
+Integrated Visual Tools:
+	#Knine, orange
+-----------------------------------------------------------
+    Commerical Tools for DS
+-----------------------------------------------------------
+
+Commerical Options for DS Tools:
+		1. Oracle database
+		2. MS SQL server
+		3. IBM DB2
+	ETL tools
+		1. Informatica
+		2. IBM infoSphere DataStage
+		3. Talend
+		4. IBM Watson Studio Desktop
+	Data Visualization
+		1. tableau
+		2. IBM congnos Analytics
+	Model Building
+		1. SPSS
+		2. SAS
+		3. IBM Watson Studio Desktop
+	Data Asset Management
+		1. Informatica
+
+Cloud-based Commerical Tools:
+	Model building:
+		1. Azure Machine learning
+		2. IBM
+		3. H2O.ai
+	Data Management:
+		1. AWS Amazaon Dynamo DB
+		2. Cloudant Couch DB relax
+		3. IBM Db2
+	ETL or ELT tools:
+		1. Informatica
+		2. IBM Data Refinery
+	Data Visualization
+		1. Datameer
+		2. IBM Cognos Analytics
+-----------------------------------------------------------
+    Scientifics computing libraries in Python
+-----------------------------------------------------------
+1. Scientifics computing:
+	1. Pandas(Data structures and tools)
+		<DataFrames>
+	2. NumPy(Arrays&Matrices)
+2. Visualization:
+	1. Matplotlib
+	2. Seaborn
+3. Machine Learning and Deep Learning
+	1. Scikit-learn(ML:regression, classification)
+	2. Keras
+	3. TensorFlow
+	4. PyTorch
+-----------------------------------------------------------
+    Application Programming Interface(API)
+-----------------------------------------------------------
+1. What's API?
+	Let two pieces program to communicate each other. API(input) Data(output)
+2. REST APIs
+	client <-> web Service
+	HTTP: Request, JSON file
+-----------------------------------------------------------
+    Data sets
+-----------------------------------------------------------
+1. What's data sets?
+	Collection of data
+	Data structures
+		Tabular data
+			#csv file
+		Hierarchical data, network data
+			#graph
+		Raw files
+			#images
+
+2. Where to find open data:
+	- Open data protal list
+		<http://datacatalogs.org>
+	- Governmental, intergovernmental and organization websites
+		<data.un.org>
+	- Kaggle
+		<www.kaggle.com/datasets>
+	- Google datasets search
+
+	Community Data License Agreement
+-----------------------------------------------------------
+    Data Asset eXchange
+-----------------------------------------------------------
+- curated collection of data sets:
+	- From IBM research and 3rd party
+	- multiple application domains
+-----------------------------------------------------------
+    Machine Learning Models
+-----------------------------------------------------------
+
+1. What's Model?
+	- ML models identify patterns in data
+	- A model must be trained
+
+2. Supervised Learning
+	- Data is given with correct predictions
+	- Solving #regression and classification problem
+	- Regression problems
+		home sale prices
+		stock market prices
+	- Classification problems
+		email spam filter
+
+3. Unsupervised Learning
+	- Data is not labeled
+	- Models try to identify patterns without any help
+	- clustering 
+		human shopping behavior
+	- Anomaly detection
+		fragile credit card
+
+4. Reinforcement Learning
+	- mouse get reward after success
+	- Learn best decsion and get reward
+	- Chess game
+
+5. Deep Learning
+	- emulate how the human brain works
+	- NLP
+	- Time series forecasting
+	- very large datasets
+
+6. Using models to solve a problem
+	1. Prepare data
+	2. Build model
+	3. Train model
+	#Cost lots of time, resource
+
+	4. Deploy model
+	5. Use model
+
+MAX model reduces time to values
+	- Free open-source deep learning microservices
+	- pre-trained models
+
+MAX model-serving microservice
+
+Model-serving container = 
+	{I/O and model processing code -> Pre-trained model(Data + Model + Compute resources + Domain expertise) -> REST API}
+
+
+
+
+

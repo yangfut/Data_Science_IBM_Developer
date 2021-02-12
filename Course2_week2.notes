@@ -1,0 +1,127 @@
+-----------------------------------------------------------
+    Introduction to RStudio
+-----------------------------------------------------------
+Popular RStudio Library
+	1. dplyr: Data manipulation
+	2. stringr: String manipulation
+	3. ggplot: Data visualization
+	4. caret: Machine Learning
+
+R is skipped!
+
+-----------------------------------------------------------
+    Git/GitHub
+-----------------------------------------------------------
+
+Distributed version control system
+
+	- Repository - The folders of your project setting up for vision control
+	- Fork - A copy of repository
+	- Pull request - request someone to review and approve your changes
+	- Working directory - A directory on your file system associated with a git repository
+
+Basic git commands:
+	git init, git add, git status, git commit, git reset, git log, git branch, git checkout, git merge
+	<try.github.io>
+Working with Branches:
+	What is a branch?
+		- a snapshot of your repository
+
+-----------------------------------------------------------
+    Create child branch
+-----------------------------------------------------------
+
+1. In github repository, click main and type your child branch name, like mybranch
+2. Do something new in it
+3. Click pull&request
+	- merge
+-----------------------------------------------------------
+    clone and push your repository
+-----------------------------------------------------------
+1. <git clone git@github.com:yangfut/Leetcode.git >
+	- get this repository to your current local directory
+
+2. Do your things
+	- create an test.txt for an example
+
+3. <git add test.txt>
+	- make this/these files ready to push into remote repository
+
+4. <git status>
+	- check whether your file is ready
+
+5. <git commit -m "init commit">
+	- write your description for this/these file when uploading
+	- "init commit" is changable
+	- If something run, <git config --global user.email "you@example.com">
+
+6. <git push>
+	- Done
+-----------------------------------------------------------
+    upload your local repository to empty remote repository
+-----------------------------------------------------------
+1. <echo "# demo" >> README.md>
+2. <git init>
+3. <git add .>
+4. <git commit -m "Hello World!">
+
+#Existed repository
+5. <git remote add origin git@github.com:yangfut/demo.git>
+6. <git branch -M main>
+7. <git push -u origin main>
+#Create new repository
+5. <git branch -M main>
+6. <git remote add origin git@github.com:yangfut/demo.git>
+7. <git push -u origin main>
+
+-----------------------------------------------------------
+    update local repository
+-----------------------------------------------------------
+1. <git pull>
+	- git folder is connected first
+
+-----------------------------------------------------------
+    create mybranch and switch it from main brnach
+-----------------------------------------------------------
+1. <git branch mybranch>
+2. <git status>
+	- check what is your current branch? main or other child branch
+3. <git checkout mybranch>
+	- Now, it turns to mybranch in local repository
+
+-----------------------------------------------------------
+    create file in mybranch, upload it, and merge it into main branch
+-----------------------------------------------------------
+
+1. <git checkout mybranch>
+	- move to mybranch branch from main branch
+2. <echo "# stuff on branch" >> stuffonbranch.txt>
+	- create stuffonbranch.txt on mybranch
+3. <git add stuffonbranch.txt>
+	- ready to push
+4. <git push>
+	- if error, <git push --set-upstream origin mybranch>
+5. <git push>
+	- problem solved
+6. <git checkout main>
+	- no uploaded files
+7. <git merge mybranch>
+	- merge mybranch into main
+	- uploaded files appear
+8. <git push>
+
+-----------------------------------------------------------
+    upload others repository
+-----------------------------------------------------------
+1. fork into your private repository
+	- press fork buttom
+2. git clone, modify files, and push to your private repository
+	- <open .>
+	- <git add .>
+	- <git push>
+3. click pull request on your remote repository website 
+
+
+
+
+
